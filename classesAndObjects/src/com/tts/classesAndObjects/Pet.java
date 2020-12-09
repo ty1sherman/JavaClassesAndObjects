@@ -14,6 +14,7 @@ package com.tts.classesAndObjects;
  */
 public class Pet {
 
+	//Variables
 	private String Name;
 	
 	private int Age;
@@ -22,26 +23,21 @@ public class Pet {
 	
 	private String Type;
 	
-	private Pet(String name, int Age)
+	//Constructors
+	private Pet() //Empty
 	{
 		
 	}
 	
-	private Pet()
+	private Pet(String Name, int Age, String Location, String Type)//All attibutes
 	{
-		
+		this.Name = Name;
+		this.Age = Age;
+		this.Location = Location;
+		this.Type = Type;
 	}
 	
-	private Pet(String Name, int Age, String Location, String Type)
-	{
-		
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	
-	}
+	//Getters & Setters
 
 	public String getName() {
 		return Name;
@@ -67,5 +63,13 @@ public class Pet {
 	public String getType() {
 		return Type;
 	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+	}
+
 
 }
