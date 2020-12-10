@@ -37,8 +37,16 @@ public class Pet {
 		this.Type = Type;
 	}
 	
-	//Getters & Setters
-
+	/*Code to be able to access the following (Get Methods):
+		name
+		age
+		type
+	Code to be able to change (Set Methods):
+		name
+		age
+		location
+	  
+	 */
 	public String getName() {
 		return Name;
 	}
@@ -54,7 +62,6 @@ public class Pet {
 	public void setAge(int age) {
 		Age = age;
 	}
-
 
 	public void setLocation(String location) {
 		Location = location;

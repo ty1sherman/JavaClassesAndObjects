@@ -1,5 +1,5 @@
 package com.tts.classesAndObjects;
-
+import java.util.Scanner;
 /*This application does the following:
  * Minimum 3 private instance variables
 	An empty constructor
@@ -29,12 +29,15 @@ public class Person {
 	
 	Person(String name, int age)
 	{
-		
+		this.name= name;
+		this.age = age;
 	}
 	
 	Person(String name, int age, String location)
 	{
-		
+		this.name = name;
+		this.age = age;
+		this.location = location;
 	}
 	
 	//METHODS
@@ -42,6 +45,15 @@ public class Person {
 	{
 		
 		return x;
+	}
+	
+	public static boolean oldMan(int age)
+	{
+		if (age > 50){
+			return true;
+		}
+		else
+			return false;
 	}
 	
 	//GETTERS & SETTERS
@@ -72,10 +84,15 @@ public class Person {
 /* ************************** MAIN ********************** */	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
 		
 		
-		System.out.println(greeting("Tywon"));
+		System.out.println("Hello " +greeting("Tywon"));
 		
+		System.out.println("Enter your age: ");
+		int age= sc.nextInt();
+		
+		System.out.println("His age more than 50? " +oldMan(age));
 	}
 	
 
